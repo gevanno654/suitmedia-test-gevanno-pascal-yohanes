@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const apiUrl = 'https://suitmedia-backend.suitdev.com/api/ideas';
     let currentPage = 1;
     let pageSize = 10;
-    let sortBy = 'published_at'; // --Defaultnya Newest khusus untuk pengguna yang pertama kali membuka website.-- //
+    let sortBy = '-published_at'; // --Defaultnya Newest khusus untuk pengguna yang pertama kali membuka website.-- //
 
     const sortSelect = document.getElementById('sortSelect');
     const pageSizeSelect = document.getElementById('pageSizeSelect');
