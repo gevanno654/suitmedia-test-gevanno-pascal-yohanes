@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas</title>
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- Linking Resources Area Start -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <!-- Font Roboto Condensed in Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstarp 5.3.3 -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link href="styles/styles.css" rel="stylesheet">
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- Linking Resources Area End -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!! -->
+</head>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<body>
+    <!-- !!!!!!!!!!!!!!!!! -->
+    <!-- Header Area Start -->
+    <!-- !!!!!!!!!!!!!!!!! -->
+
+    <!-- ------------ -->
+    <!-- Navbar Start -->
+    <!-- ------------ -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="ideas.html">
+              <img class="logo-invert" src="https://suitmedia.com/_ipx/w_100&f_webp&q_100/assets/img/site-logo.png" width="100" height="40">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="work.html" id="workLink">Work</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html" id="aboutLink">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="services.html" id="servicesLink">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="ideas.html" id="ideasLink">Ideas</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="careers.html" id="careersLink">Careers</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html" id="contactLink">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- ---------- -->
+    <!-- Navbar End -->
+    <!-- ---------- -->
+
+    <!-- !!!!!!!!!!!!!!!!! -->
+    <!-- Header Area End-->
+    <!-- !!!!!!!!!!!!!!!!! -->
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- !!!!!!!!!!!!!!!!! -->
+    <!-- Banner Area Start -->
+    <!-- !!!!!!!!!!!!!!!!! -->
+
+    <div class="banner-container">
+      <div class="banner-text">
+          <h1>Ideas</h1>
+          <p>Where all our great things begin</p>
+      </div>
+      <img src="img/Banner.jpg" class="banner-image">
+    </div>
+
+    <!-- !!!!!!!!!!!!!!! -->
+    <!-- Banner Area End -->
+    <!-- !!!!!!!!!!!!!!! -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- !!!!!!!!!!!!!!!!!!!! -->
+    <!-- List Post Area Start -->
+    <!-- !!!!!!!!!!!!!!!!!!!! -->
+
+    <div class="container mt-5">
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- Filter Area (Showing of, Show per page, and Sort by) Start -->
+      <div class="container-filter mb-3 align-items-center">
+          <div class="col-auto" id="showingText"></div>
+          <div class="col-auto d-flex align-items-center">
+            <div class="me-2">Show per page:</div>
+            <select id="pageSizeSelect" class="form-select me-4">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+            </select>
+            <span class="me-2">Sort by:</span>
+            <select id="sortSelect" class="form-select">
+                <option value="-published_at">Newest</option>
+                <option value="published_at">Oldest</option>
+            </select>
+          </div>
+      </div>
+      <!-- Filter Area (Showing of, Show per page, and Sort by) End -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- List Post Content Area Start -->
+      <div id="postList" class="row"></div>
+      <!-- List Post Content Area End -->
+      <!-- ---------------------------------------------------------------------- -->
+      <!-- Pagination Area Start -->
+      <nav>
+          <ul class="pagination justify-content-center" id="pagination"></ul>
+      </nav>
+      <!-- Pagination Area End -->
+      <!-- ---------------------------------------------------------------------- -->
+    </div>
+
+    <!-- !!!!!!!!!!!!!!!!!! -->
+    <!-- List Post Area End -->
+    <!-- !!!!!!!!!!!!!!!!!! -->
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- Linking Javascript Area Start -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <!-- Bootstrap Javascript -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <!-- Custom Javascript-->
+    <script src="src/scripts.js"></script>
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- Linking Javascript Area End -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+</body>
+</html>
